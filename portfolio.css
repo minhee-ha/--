@@ -1263,7 +1263,7 @@ html {
 .page-project-01 .project01-title-wrap {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 20px;
   width: min(100%, 62.9375rem);
 }
 
