@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhee Ha – Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css?v=20260522-2" />
+  </head>
+  <body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="nav">
+      <a class="nav__link" href="#home">Home</a>
+      <a class="nav__link" href="#profile">Profile</a>
+      <a class="nav__link" href="#skills">Skills</a>
+      <a class="nav__link" href="#index">Index</a>
+    </header>
+
+    <!-- ===== SECTION: HOME ===== -->
+    <section id="home" class="section section-home">
+      <div class="home-stage">
+        <video class="home-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="./홈배경.mp4" type="video/mp4" />
+        </video>
+        <a class="home-scroll" href="#profile" data-scroll-target="#profile">﹀ SCROLL DOWN ﹀</a>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: PROFILE ===== -->
+    <section id="profile" class="section section-profile">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <!-- <p class="section-head__eyebrow">01 PROFILE</p>
+          <h2 class="section-head__title">Profile Snapshot</h2> -->
+          <p class="section-head__desc">콘텐츠 전략부터 실행, 브랜딩까지 연결되는 실무형 경험을 정리했습니다.</p>
+        </div>
+
+        <div class="profile-inner">
+          <div class="profile-photo" aria-label="Profile video area">
+            <video class="profile-photo-video" autoplay muted loop playsinline preload="metadata">
+              <source src="/profile/크롭.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="profile-card">
+            <img class="profile-folder-img" src="./images/프로필섹션 폴더.png" alt="" />
+            <div class="profile-content">
+              <h2 class="section-title">Profile</h2>
+              <div class="profile-grid">
+
+          <!-- LEFT COL: Education + Experience -->
+          <div class="profile-col profile-col--left">
+            <div class="profile-block profile-education">
+              <h3 class="profile-block__label">EDUCATION</h3>
+              <ul class="profile-list">
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2017.03 – 2023.02</span>
+                  <span class="profile-list__desc">한양대학교ERICA–경영학부, 문화콘텐츠학과 <strong>복수전공</strong></span>
+                </li>
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2022.06 – 2022.07</span>
+                  <span class="profile-list__desc">디지털 MICE 실감형 콘텐츠 전문인력 양성과정 <strong>최우수 수상</strong></span>
+                </li>
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2022.08 – 2023.01</span>
+                  <span class="profile-list__desc">KF 글로벌 챌린저 아카데미 <strong>수료</strong></span>
+                </li>
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2025.12 – 2026.06</span>
+                  <span class="profile-list__desc">MBC아카데미컴퓨터학원–생성형 AI를 활용한 영상 웹퍼블리셔 &amp; 프론트엔드 개발자 양성 <strong>수료</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="profile-block profile-experience">
+              <h3 class="profile-block__label">EXPERIENCE</h3>
+              <ul class="profile-list">
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2022</span>
+                  <span class="profile-list__desc">메타버스 플랫폼 제페토 월드 제작 <strong>실시간 인기 플랫폼 등재</strong></span>
+                </li>
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2022</span>
+                  <span class="profile-list__desc">미국 Missouri University 어학연수</span>
+                </li>
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2022</span>
+                  <span class="profile-list__desc">개인 유튜브 채널 운영</span>
+                </li>
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2023 –</span>
+                  <span class="profile-list__desc">체형관리샵 썸낼테라피 로고 및 명함, 홍보물 디자인</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT COL: Career + Tools -->
+          <div class="profile-col profile-col--right">
+            <div class="profile-block profile-career">
+              <h3 class="profile-block__label">CAREER</h3>
+              <ul class="profile-list">
+                <li class="profile-list__item">
+                  <span class="profile-list__date">2023.12 – 2024.09</span>
+                  <span class="profile-list__desc">NDP 콘텐츠 마케팅</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="profile-block profile-tools">
+              <div class="profile-tools__group">
+                <h3 class="profile-block__label">SKILLS TOOL</h3>
+                <div class="profile-tools__icons">
+                  <img src="./skills icon images/Vector.png" alt="Figma" />
+                  <img src="./skills icon images/Vector-3.png" alt="Premiere Pro" />
+                  <img src="./skills icon images/Ae.png" alt="After Effects" />
+                  <img src="./skills icon images/Vector-1.png" alt="Photoshop" />
+                  <img src="./skills icon images/Vector-2.png" alt="Illustrator" />
+                  <img src="./skills icon images/vs.png" alt="VS Code" />
+                  <img src="./skills icon images/Vector-4.png" alt="ChatGPT" />
+                </div>
+              </div>
+              <div class="profile-tools__group">
+                <h3 class="profile-block__label">SNS/Marketing</h3>
+                <div class="profile-tools__icons">
+                  <img src="./skills icon images/Vector-5.png" alt="Instagram" />
+                  <img src="./skills icon images/Vector-6.png" alt="Meta" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="section-scroll" href="#skills" data-scroll-target="#skills">﹀ SCROLL DOWN ﹀</a>
+    </section>
+
+    <!-- ===== SECTION: SKILLS ===== -->
+    <section id="skills" class="section section-skills">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <!-- <p class="section-head__eyebrow">02 SKILLS</p>
+          <h2 class="section-head__title">Capability Stack</h2> -->
+          <p class="section-head__desc">디자인, 제작, 마케팅 역량을 하나의 흐름으로 운영합니다.</p>
+        </div>
+
+        <h2 class="skills-title">Skills</h2>
+
+        <div class="skills-group skills-group--design">
+        <h3 class="skills-group__label">Design</h3>
+        <div class="skills-grid skills-grid--4">
+          <article class="skill-card skill-card--figma">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector.png" alt="Figma" />
+              <strong class="skill-card__name">Figma</strong>
+            </div>
+            <p class="skill-card__desc">포트폴리오 웹 구조 설계 및 어플 UI/와이어프레임 제작</p>
+          </article>
+          <article class="skill-card skill-card--photoshop">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector-1.png" alt="Photoshop" />
+              <strong class="skill-card__name">Photoshop</strong>
+            </div>
+            <p class="skill-card__desc">SNS 및 광고 이미지 제작을 통한 채널 성장 기여</p>
+          </article>
+          <article class="skill-card skill-card--illustrator">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector-2.png" alt="Illustrator" />
+              <strong class="skill-card__name">Illustrator</strong>
+            </div>
+            <p class="skill-card__desc">브랜드 무드에 맞는 그래픽 요소 및 비주얼 디자인 제작</p>
+          </article>
+          <article class="skill-card skill-card--premiere">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector-3.png" alt="Premiere Pro" />
+              <strong class="skill-card__name">Premiere Pro</strong>
+            </div>
+            <p class="skill-card__desc">유튜브, 릴스 영상 편집을 통한 콘텐츠 노출 및 조회수 증가 경험</p>
+          </article>
+        </div>
+        </div>
+
+        <div class="skills-group skills-group--build">
+        <h3 class="skills-group__label">Build &amp; AI</h3>
+        <div class="skills-grid skills-grid--2">
+          <article class="skill-card skill-card--vscode">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/vs.png" alt="VS Code" />
+              <strong class="skill-card__name">VS Code</strong>
+            </div>
+            <p class="skill-card__desc">AI 기반 코드 활용으로 웹페이지 구현 및 퍼블리싱 진행</p>
+          </article>
+          <article class="skill-card skill-card--chatgpt">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector-4.png" alt="ChatGPT" />
+              <strong class="skill-card__name">ChatGPT</strong>
+            </div>
+            <p class="skill-card__desc">AI를 단순 보조가 아닌, 기획·제작·의사결정 전반에 활용</p>
+          </article>
+          <article class="skill-card skill-card--capcut">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/capcut.png" alt="CapCut" />
+              <strong class="skill-card__name">CapCut</strong>
+            </div>
+            <p class="skill-card__desc">숏폼 및 릴스 영상 편집 기반 콘텐츠 제작</p>
+          </article>
+          <article class="skill-card skill-card--vllo">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/vllo.png" alt="VLLO" />
+              <strong class="skill-card__name">VLLO</strong>
+            </div>
+            <p class="skill-card__desc">모바일 기반 영상 편집 및 자막 제작</p>
+          </article>
+          <article class="skill-card skill-card--miri">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/miri.png" alt="미리캔버스" />
+              <strong class="skill-card__name">미리캔버스</strong>
+            </div>
+            <p class="skill-card__desc">썸네일, 카드뉴스, SNS 디자인 제작</p>
+          </article>
+        </div>
+        </div>
+
+        <div class="skills-group skills-group--growth">
+        <h3 class="skills-group__label">Growth</h3>
+        <div class="skills-grid skills-grid--2">
+          <article class="skill-card skill-card--instagram">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector-5.png" alt="Instagram" />
+              <strong class="skill-card__name">Instagram</strong>
+            </div>
+            <p class="skill-card__desc">매거진형 계정 운영으로 팔로워 8K, 누적 조회수 200만 달성</p>
+          </article>
+          <article class="skill-card skill-card--meta">
+            <div class="skill-card__head">
+              <img class="skill-card__icon" src="./skills icon images/Vector-6.png" alt="Meta Ads" />
+              <strong class="skill-card__name">Meta Ads</strong>
+            </div>
+            <p class="skill-card__desc">광고 운영 및 데이터 분석을 통한 ROAS 315% 개선</p>
+          </article>
+        </div>
+        </div>
+      </div>
+      <a class="section-scroll" href="#index" data-scroll-target="#index">﹀ SCROLL DOWN ﹀</a>
+    </section>
+
+    <!-- ===== SECTION: INDEX ===== -->
+    <section id="index" class="section section-index">
+      <div class="section-inner">
+        <div class="section-head" data-reveal>
+          <!-- <p class="section-head__eyebrow">03 PROJECT INDEX</p>
+          <h2 class="section-head__title">Selected Works</h2> -->
+          <p class="section-head__desc">성과 중심 프로젝트를 카테고리별로 빠르게 확인할 수 있습니다.</p>
+        </div>
+
+        <h2 class="index-title">Index</h2>
+
+        <div class="index-visual index-card">
+          <img class="index-visual__image index-folder-img" src="./images/image-folders.png" alt="" aria-hidden="true" />
+          <div class="index-items index-content">
+          <a href="./projects_1.html" class="index-item index-item--1">
+            <span class="index-item__num index-title-en">01 Content Growth</span>
+            <em class="index-item__sub index-title-kr">콘텐츠 채널 성장</em>
+            <b class="index-item__stat index-metric">8K followers / 2M views</b>
+          </a>
+          <a href="./projects_2.html" class="index-item index-item--2">
+            <span class="index-item__num index-title-en">02 Marketing</span>
+            <em class="index-item__sub index-title-kr">플랫폼 입점 및 광고 성과 개선</em>
+            <b class="index-item__stat index-metric">315% ROAS</b>
+          </a>
+          <a href="./projects_3.html" class="index-item index-item--3">
+            <span class="index-item__num index-title-en">03 Video Content</span>
+            <em class="index-item__sub index-title-kr">영상 콘텐츠 제작</em>
+          </a>
+          <a href="./projects_4.html" class="index-item index-item--4">
+            <span class="index-item__num index-title-en">04 Wedding Design</span>
+            <em class="index-item__sub index-title-kr">웨딩 청첩장 디자인</em>
+          </a>
+          <a href="./projects_5.html" class="index-item index-item--5">
+            <span class="index-item__num index-title-en">05 Service Planning</span>
+            <em class="index-item__sub index-title-kr">서비스 기획</em>
+          </a>
+          <a href="./projects_6.html" class="index-item index-item--6">
+            <span class="index-item__num index-title-en">06 Web Design &amp; Build</span>
+            <em class="index-item__sub index-title-kr">웹 디자인 및 AI 기반 구현</em>
+          </a>
+          </div>
+        </div>
+
+        <p class="index-guide">각 목차를 클릭하면 해당 페이지로 이동합니다</p>
+      </div>
+    </section>
+
+    <footer id="footer" class="site-footer" data-reveal>
+      <div class="site-footer__brand">
+        <p class="site-footer__label">Minhee Ha Portfolio</p>
+        <h2 class="site-footer__title">Content, Design, Growth.</h2>
+      </div>
+      <div class="site-footer__links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#index">Index</a>
+      </div>
+    </footer>
+
+    <script src="./portfolio.js"></script>
+
+  </body>
+</html>
