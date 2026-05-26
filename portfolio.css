@@ -1201,7 +1201,7 @@ html {
    PROJECT 01: Figma Layout Mapping
    ========================================================== */
 .page-project-01 {
-  background: linear-gradient(180deg, #f6f2ee 0%, #f1ece7 100%);
+  background: linear-gradient(180deg, #f7f3ef 0%, #f5f1ec 100%);
   color: var(--color-ink);
   scroll-snap-type: none;
 }
@@ -1215,7 +1215,7 @@ html {
 .page-project-01 .project-detail {
   width: min(100%, 1400px);
   margin: 0 auto;
-  padding: clamp(32px, 5vw, 80px);
+  padding: clamp(20px, 2.2vw, 34px);
 }
 
 .page-project-01 .project01-main,
@@ -1235,15 +1235,34 @@ html {
   position: relative;
   width: 100%;
   max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(24px, 4vw, 65px);
-  padding: clamp(32px, 4vw, 50px) clamp(28px, 4vw, 40px);
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: minmax(0, 60%) minmax(0, 40%);
+  align-content: start;
+  row-gap: clamp(16px, 1.8vw, 24px);
+  column-gap: clamp(16px, 1.8vw, 28px);
+  padding: clamp(12px, 1.4vw, 18px) clamp(10px, 1.2vw, 16px);
+}
+
+.page-project-01 .project01-frame46::after {
+  content: '';
+  position: absolute;
+  right: clamp(8px, 1.2vw, 18px);
+  top: clamp(16px, 1.8vw, 30px);
+  width: clamp(280px, 31vw, 460px);
+  height: clamp(320px, 38vw, 520px);
+  border-radius: 28px;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(60% 60% at 50% 38%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .page-project-01 .project01-frame46 > *:not(.project01-mockup) {
   position: relative;
-  z-index: 1;
+  grid-column: 1;
+  width: 100%;
+  justify-self: start;
+  z-index: 2;
 }
 
 .page-project-01 .back-to-index {
@@ -1263,48 +1282,55 @@ html {
 .page-project-01 .project01-title-wrap {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: min(100%, 62.9375rem);
+  gap: clamp(10px, 1.2vw, 16px);
+  width: 100%;
 }
 
 .page-project-01 .project01-title {
   margin: 0;
   color: var(--deep-red);
-  font-size: clamp(40px, 5vw, 72px);
+  font-size: clamp(46px, 5.2cqw, 78px);
   line-height: 0.95;
   letter-spacing: -0.03em;
   font-weight: 800;
+  text-wrap: balance;
+  max-width: 100%;
 }
 
 .page-project-01 .project01-sub {
   margin: 0;
-  font-size: clamp(18px, 2.4vw, 36px);
-  line-height: 1.25;
+  font-size: clamp(20px, 2.05cqw, 32px);
+  line-height: 1.22;
+  max-width: 100%;
 }
 
 .page-project-01 .project01-note {
   margin: 0;
-  font-size: clamp(14px, 1.2vw, 18px);
-  line-height: 1.6;
+  font-size: clamp(14px, 1.12cqw, 18px);
+  line-height: 1.58;
   color: #2c2c2c;
+  max-width: 100%;
 }
 
 .page-project-01 .project01-keywords,
 .page-project-01 .keyword-card {
   display: flex;
+  width: 100%;
+  min-height: 92px;
   flex-wrap: wrap;
-  gap: clamp(12px, 3vw, 68px);
+  align-items: center;
+  gap: clamp(12px, 1.4vw, 22px);
 }
 
 .page-project-01 .project01-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: clamp(44px, 4vw, 56px);
-  padding: 8px clamp(14px, 1.5vw, 20px);
+  min-height: clamp(42px, 3.1cqw, 52px);
+  padding: 8px clamp(12px, 1.05cqw, 16px);
   border-radius: 1.25rem;
   font-family: var(--font-mono);
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(13px, 0.92cqw, 16px);
   line-height: 1.1;
   font-weight: 700;
   color: #fff;
@@ -1314,8 +1340,8 @@ html {
 .page-project-01 .project01-strategy-stack {
   display: flex;
   flex-direction: column;
-  gap: clamp(20px, 2.2vw, 31px);
-  width: min(100%, 62.4375rem);
+  gap: clamp(12px, 1.35vw, 18px);
+  width: 100%;
 }
 
 .page-project-01 .project01-strategy-card h2 {
@@ -1324,7 +1350,7 @@ html {
   align-items: center;
   gap: 0.625rem;
   font-family: var(--font-mono);
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: clamp(32px, 2.55cqw, 40px);
   line-height: 1;
   font-weight: 600;
   color: var(--ink);
@@ -1339,17 +1365,18 @@ html {
 
 .page-project-01 .project01-strategy-card p {
   margin: 0.6rem 0 0;
-  font-size: clamp(14px, 1.2vw, 18px);
-  line-height: 1.6;
+  font-size: clamp(14px, 1.02cqw, 17px);
+  line-height: 1.56;
+  max-width: 100%;
 }
 
 .page-project-01 .project01-mockup {
   margin: 0;
   position: absolute;
-  right: clamp(20px, 8vw, 90px);
-  top: clamp(80px, 10vw, 160px);
-  width: clamp(220px, 28vw, 480px);
-  opacity: 0.28;
+  right: clamp(10px, 1.8vw, 28px);
+  top: clamp(26px, 2.8vw, 52px);
+  width: clamp(300px, 33vw, 500px);
+  opacity: 0.2;
   pointer-events: none;
   z-index: 0;
 }
@@ -1363,7 +1390,37 @@ html {
 .page-project-01 .folder-section {
   position: relative;
   width: 100%;
-  margin-top: clamp(28px, 4vw, 56px);
+  margin-top: clamp(16px, 2.2vw, 30px);
+  overflow: visible;
+}
+
+.page-project-01 .project01-bridge {
+  width: 100%;
+  margin: clamp(14px, 2.5vw, 24px) 0 clamp(10px, 2vw, 18px);
+  padding: 0 clamp(14px, 1.8vw, 24px);
+  color: #3f342d;
+}
+
+.page-project-01 .project01-bridge-en {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(10px, 0.95vw, 16px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--deep-red);
+}
+
+.page-project-01 .project01-bridge h2 {
+  margin: clamp(4px, 0.8vw, 8px) 0 0;
+  font-size: clamp(18px, 2.2vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.page-project-01 .project01-bridge-sub {
+  margin: clamp(4px, 0.9vw, 9px) 0 0;
+  font-size: clamp(12px, 1.18vw, 19px);
+  color: #5a4d45;
 }
 
 .page-project-01 .project01-folder-vector3 {
@@ -1372,60 +1429,80 @@ html {
   min-height: 900px;
   height: auto;
   overflow: visible;
-  padding: clamp(20px, 2.5vw, 32px) 0 0;
+  padding: clamp(96px, 9vw, 138px) clamp(16px, 2vw, 28px) clamp(80px, 8vw, 140px);
   border-radius: 0;
   box-shadow: none;
   background: transparent;
+}
+
+.page-project-01 .project01-folder-vector3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: clamp(84px, 8.2vw, 122px);
+  bottom: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, #f7f3ef 0%, #d8d0c4 35%, #a49b8c 100%);
 }
 
 .page-project-01 .folder-bg {
   display: block;
   width: 100%;
   height: auto;
-  position: relative;
-  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   pointer-events: none;
+  transform: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 74%, rgba(0, 0, 0, 0.15) 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 74%, rgba(0, 0, 0, 0.15) 90%, transparent 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .page-project-01 .project01-archive-grid {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: clamp(28px, 4vw, 52px);
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(18px, 2.4vw, 30px);
-  padding: clamp(4px, 1vw, 12px) clamp(20px, 3vw, 40px) clamp(20px, 3vw, 36px);
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  align-items: start;
+  gap: clamp(14px, 2vw, 24px);
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page-project-01 .project01-folder-vector3::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 26%);
+  content: none;
 }
 
 .page-project-01 .archive-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: clamp(14px, 2vw, 22px);
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr);
+  gap: clamp(12px, 1.6vw, 18px);
   align-items: stretch;
-  padding: clamp(16px, 2vw, 22px);
+  padding: clamp(11px, 1.3vw, 15px);
   border-radius: clamp(18px, 2.2vw, 28px);
-  background: rgba(247, 243, 239, 0.1);
-  border: 1px solid rgba(122, 30, 44, 0.06);
+  background: rgba(247, 243, 239, 0.2);
+  border: 1px solid rgba(122, 30, 44, 0.12);
   backdrop-filter: none;
+  box-shadow: 0 8px 24px rgba(64, 43, 30, 0.1);
 }
 
 .page-project-01 .archive-media {
   margin: 0;
   border-radius: clamp(16px, 1.8vw, 22px);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(122, 30, 44, 0.08);
-  min-height: clamp(220px, 30vw, 420px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(122, 30, 44, 0.12);
+  min-height: clamp(200px, 25vw, 350px);
+  aspect-ratio: 4 / 5;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 }
 
 .page-project-01 .archive-media--image {
@@ -1457,18 +1534,36 @@ html {
   background: transparent;
 }
 
+.page-project-01 .archive-card--feed .archive-media--video video {
+  object-position: center 51%;
+  transform: scale(1.07);
+  animation: project01-feed-pan 9s ease-in-out infinite alternate;
+}
+
+.page-project-01 .archive-card--reels .archive-media--video video {
+  object-position: center 51%;
+  transform: scale(1.07);
+  animation: project01-reels-drift 6s linear infinite alternate;
+}
+
+.page-project-01 .archive-media video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .page-project-01 .archive-insight {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: clamp(12px, 1.6vw, 18px);
+  justify-content: flex-start;
+  gap: clamp(8px, 1.1vw, 12px);
   min-width: 0;
 }
 
 .page-project-01 .archive-kicker {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: clamp(13px, 1.05vw, 15px);
+  font-size: clamp(14px, 1.35vw, 24px);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--deep-red);
@@ -1477,15 +1572,16 @@ html {
 .page-project-01 .archive-insight h3 {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: clamp(20px, 1.8vw, 28px);
+  font-size: clamp(20px, 2.05vw, 40px);
   line-height: 1.25;
   color: var(--ink);
+  white-space: nowrap;
 }
 
 .page-project-01 .archive-tags {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: clamp(8px, 1.1vw, 12px);
   margin: 0;
   padding: 0;
@@ -1496,12 +1592,31 @@ html {
   align-items: center;
   width: fit-content;
   max-width: 100%;
-  padding: 0.55rem 0.85rem;
+  padding: 0.42rem 0.72rem;
   border-radius: 999px;
   background: rgba(122, 30, 44, 0.08);
   color: #3b312a;
-  font-size: clamp(13px, 1vw, 16px);
+  font-size: clamp(12px, 1.02vw, 20px);
   line-height: 1.35;
+  white-space: nowrap;
+}
+
+@keyframes project01-feed-pan {
+  0% {
+    transform: scale(1.07) translateX(-1.5%);
+  }
+  100% {
+    transform: scale(1.07) translateX(1.5%);
+  }
+}
+
+@keyframes project01-reels-drift {
+  0% {
+    transform: scale(1.07) translateY(-2%);
+  }
+  100% {
+    transform: scale(1.07) translateY(2%);
+  }
 }
 
 .page-project-01 .project01-asset {
@@ -1516,15 +1631,33 @@ html {
 }
 
 @media (max-width: 1080px) {
+  .page-project-01 .project01-bridge,
+  .page-project-01 .project01-archive-grid {
+    width: 100%;
+  }
+
+  .page-project-01 .project01-frame46 {
+    grid-template-columns: minmax(0, 58%) minmax(0, 42%);
+    column-gap: clamp(10px, 1.2vw, 16px);
+  }
+
   .page-project-01 .project01-title-wrap,
   .page-project-01 .project01-strategy-stack {
-    width: min(100%, 100%);
+    width: 100%;
   }
 
   .page-project-01 .project01-mockup {
-    right: clamp(12px, 5vw, 36px);
-    width: clamp(180px, 24vw, 320px);
-    opacity: 0.22;
+    right: clamp(4px, 1.4vw, 12px);
+    top: clamp(22px, 3vw, 38px);
+    width: clamp(220px, 28vw, 360px);
+    opacity: 0.16;
+  }
+
+  .page-project-01 .project01-keywords,
+  .page-project-01 .keyword-card {
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.4vw, 18px);
+    min-height: auto;
   }
 }
 
@@ -1534,8 +1667,13 @@ html {
   }
 
   .page-project-01 .project01-frame46 {
-    gap: clamp(20px, 4vw, 28px);
-    padding: clamp(22px, 5vw, 28px) clamp(16px, 4vw, 20px);
+    grid-template-columns: 1fr;
+    gap: clamp(18px, 3vw, 24px);
+    padding: clamp(16px, 3.4vw, 22px) clamp(12px, 3vw, 16px);
+  }
+
+  .page-project-01 .project01-frame46::after {
+    content: none;
   }
 
   .page-project-01 .project01-mockup {
@@ -1545,15 +1683,24 @@ html {
     opacity: 0.17;
   }
 
+  .page-project-01 .project01-folder-vector3 {
+    padding: clamp(66px, 10vw, 92px) clamp(12px, 4vw, 16px) clamp(56px, 9vw, 78px);
+  }
+
   .page-project-01 .project01-archive-grid {
     grid-template-columns: 1fr;
-    bottom: auto;
-    top: clamp(18px, 3vw, 26px);
-    padding: clamp(20px, 4vw, 26px) clamp(16px, 4vw, 20px) clamp(24px, 5vw, 30px);
+    width: 100%;
+    padding: 0;
   }
 
   .page-project-01 .archive-card {
     grid-template-columns: 1fr;
+    transform: none;
+  }
+
+  .page-project-01 .archive-insight h3,
+  .page-project-01 .archive-tags li {
+    white-space: normal;
   }
 }
 

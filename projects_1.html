@@ -15,8 +15,8 @@
 
             <header class="project01-title-wrap">
               <h1 id="project01-title" class="project01-title">Content Growth (Instagram)</h1>
-              <p class="project01-sub">매거진형 콘텐츠 기획 및 운영을 통해 인스타그램 채널 성장</p>
-              <p class="project01-note">패션/라이프스타일 콘텐츠 시장에서 유사한 계정이 많아 차별화된 포맷이 필요했습니다.<br />매거진형 콘텐츠 구조를 기반으로 MZ 타겟에게 맞는 콘텐츠 전략을 수립하고, 채널 성장 및 반응 개선을 목표로 설정했습니다.</p>
+              <p class="project01-sub">매거진형 피드 운영 + 숏폼 릴스 운영 아카이브</p>
+              <p class="project01-note">타겟 : 18–24 여성 중심 MZ 타겟<br />콘텐츠 : 매거진형 피드 + 숏폼 릴스 운영<br />목표 : 조회수 / 저장 / 공유 기반 성장</p>
             </header>
 
             <div class="project01-keywords keyword-card" aria-label="성과 지표">
@@ -31,7 +31,7 @@
                   <img class="folder-icon-img" src="./images/무글자 폴더.png" alt="" aria-hidden="true" />
                   Strategy
                 </h2>
-                <p>Target : 트렌드와 밈에 민감한 18~24 여성 중심 MZ 타겟<br />Content Strategy : 개인의 취향과 관심사를 매거진형 큐레이션 형태로 풀어내는 콘텐츠<br />Format : 카드형 콘텐츠 + 릴스 중심 영상 콘텐츠 썸네일 중심 시각 설계</p>
+                <p>타겟 : 트렌드와 밈 반응이 빠른 18–24 여성<br />기획 : 취향 큐레이션 중심 매거진형 주제 설계<br />포맷 : 저장/공유 유도형 피드 + 후킹형 릴스</p>
               </article>
 
               <article class="project01-strategy-card">
@@ -39,7 +39,7 @@
                   <img class="folder-icon-img" src="./images/무글자 폴더.png" alt="" aria-hidden="true" />
                   Execution
                 </h2>
-                <p>콘텐츠 기획 및 제작: 트렌드 기반 주제 선정 및 콘텐츠 기획<br />디자인: 포토샵과 미리캔버스를 활용한 카드뉴스 및 썸네일 제작<br />운영: 게시물 업로드, 캡션 작성 및 팔로워 소통</p>
+                <p>운영 : 주제 선정 → 제작 → 업로드 루틴 반복<br />디자인 : 카드뉴스/썸네일 제작 및 A/B 테스트<br />기록 : 반응 데이터 기반 포맷 리파인</p>
               </article>
             </div>
 
@@ -47,6 +47,12 @@
               <img src="./images/mockup.png" alt="" />
             </figure>
           </div>
+        </section>
+
+        <section class="project01-bridge" aria-label="아카이브 연결 텍스트">
+          <p class="project01-bridge-en">archive 01 / selected works</p>
+          <h2>운영 콘텐츠 기록</h2>
+          <p class="project01-bridge-sub">피드 운영 로그와 릴스 운영 로그를 정리한 작업 보드</p>
         </section>
 
         <section class="project01-folder-wrap folder-section" aria-label="프로젝트 작업물 영역">
@@ -60,30 +66,30 @@
                 </figure>
 
                 <div class="archive-insight">
-                  <p class="archive-kicker">Feed Operation Archive</p>
-                  <h3>Card / Magazine Feed Operation</h3>
+                  <p class="archive-kicker">archive 01</p>
+                  <h3>피드 운영</h3>
                   <ul class="archive-tags" aria-label="Feed archive keywords">
-                    <li>Trend-based Curation</li>
-                    <li>Magazine-style Feed Design</li>
-                    <li>Visual Hook Structure</li>
-                    <li>Save &amp; Share Driven Layout</li>
+                    <li>트렌드 큐레이션</li>
+                    <li>저장 유도 썸네일</li>
+                    <li>매거진 카드 템포</li>
+                    <li>공유 전환 카피</li>
                   </ul>
                 </div>
               </article>
 
               <article class="archive-card archive-card--reels">
-                <figure class="archive-media archive-media--image">
-                  <img src="./images/image-folders.png" alt="" loading="lazy" />
+                <figure class="archive-media archive-media--video video-card">
+                  <video src="./video/소스2.mp4" autoplay muted loop playsinline preload="metadata" data-loop-start="17" data-loop-end="30"></video>
                 </figure>
 
                 <div class="archive-insight">
-                  <p class="archive-kicker">Reels Operation Archive</p>
-                  <h3>Short-form Reels Operation</h3>
+                  <p class="archive-kicker">reel system</p>
+                  <h3>릴스 운영</h3>
                   <ul class="archive-tags" aria-label="Reels archive keywords">
-                    <li>Hook-first Reels Editing</li>
-                    <li>Retention-focused Sequence</li>
-                    <li>Fast-paced Visual Rhythm</li>
-                    <li>Audience Engagement Strategy</li>
+                    <li>초반 후킹 편집</li>
+                    <li>이탈 방지 리듬</li>
+                    <li>자막/컷 템포 운영</li>
+                    <li>반응 기반 포맷 반복</li>
                   </ul>
                 </div>
               </article>
@@ -92,5 +98,33 @@
         </section>
       </main>
     </div>
+    <script>
+      (function () {
+        const loopVideos = document.querySelectorAll('video[data-loop-start][data-loop-end]');
+        if (!loopVideos.length) return;
+
+        loopVideos.forEach((video) => {
+          const loopStart = Number(video.dataset.loopStart);
+          const loopEnd = Number(video.dataset.loopEnd);
+
+          if (!Number.isFinite(loopStart) || !Number.isFinite(loopEnd) || loopEnd <= loopStart) return;
+
+          video.addEventListener('loadedmetadata', () => {
+            const startTime = Math.min(loopStart, Math.max(0, video.duration - 0.1));
+            video.currentTime = startTime;
+          });
+
+          video.addEventListener('timeupdate', () => {
+            const endTime = Math.min(loopEnd, video.duration);
+            if (video.currentTime >= endTime) {
+              video.currentTime = loopStart;
+              if (video.paused) {
+                video.play().catch(() => {});
+              }
+            }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
