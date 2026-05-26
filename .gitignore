@@ -1,2 +1,7 @@
 # Local Netlify folder
 .netlify
+
+# Adobe Premiere Pro artifacts (exclude from GitHub)
+*.prproj
+**/Adobe Premiere Pro Auto-Save/
+**/Adobe Premiere Pro Auto-Save/**
