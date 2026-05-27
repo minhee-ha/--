@@ -3,14 +3,17 @@ const sections = Array.from(document.querySelectorAll('section[id]'));
 const revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
 const scrollTriggers = Array.from(document.querySelectorAll('[data-scroll-target]'));
 const homeVideo = document.querySelector('.home-video');
+const fixedScroll = document.querySelector('.fixed-scroll');
 
 function setActiveLink() {
   const y = window.scrollY + 120;
   let current = sections[0]?.id || 'home';
+  let currentIndex = 0;
 
-  sections.forEach((section) => {
+  sections.forEach((section, index) => {
     if (y >= section.offsetTop) {
       current = section.id;
+      currentIndex = index;
     }
   });
 
@@ -19,6 +22,21 @@ function setActiveLink() {
     const isActive = href === `#${current}`;
     link.classList.toggle('is-active', isActive);
   });
+
+  if (fixedScroll) {
+    const next = sections[currentIndex + 1];
+
+    if (next) {
+      const selector = `#${next.id}`;
+      fixedScroll.setAttribute('href', selector);
+      fixedScroll.setAttribute('data-scroll-target', selector);
+      fixedScroll.style.opacity = '1';
+      fixedScroll.style.pointerEvents = 'auto';
+    } else {
+      fixedScroll.style.opacity = '0';
+      fixedScroll.style.pointerEvents = 'none';
+    }
+  }
 }
 
 links.forEach((link) => {
