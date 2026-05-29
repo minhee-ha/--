@@ -1,4 +1,29 @@
-﻿/* ==========================================================
+﻿/* Project 02 전용 폴더 배경 및 카드 레이아웃 */
+.project02-folder-wrap {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(64px, 7vw, 100px) clamp(24px, 4vw, 56px);
+  border-radius: 28px;
+}
+
+.project02-folder-vector4 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("images/Vector 4.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.project02-archive-grid {
+  position: relative;
+  z-index: 1;
+}
+/* ==========================================================
    PORTFOLIO.CSS  ?? Minhee Ha
    Sections: nav / home / profile / skills / index
    Each section = 1 viewport  (scroll-snap)
