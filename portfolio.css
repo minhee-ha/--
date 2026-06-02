@@ -1,4 +1,504 @@
-﻿/* ==========================================================
+﻿/* Project 02 전용 폴더 배경 및 카드 레이아웃 */
+.project02-folder-wrap {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  overflow: visible;
+}
+
+.project02-folder-vector4 {
+  position: relative;
+  width: 100%;
+  min-height: 1080px;
+  height: auto;
+  overflow: visible;
+  padding: 36px clamp(16px, 2vw, 28px) clamp(96px, 9.6vw, 168px);
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.project02-folder-vector4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, transparent 0 934px, #cd855b 934px 100%);
+}
+
+.project02-folder-vector4 .folder-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  transform: none;
+}
+
+.project02-archive-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  align-items: start;
+  gap: clamp(14px, 2vw, 24px);
+  width: 100%;
+  margin: clamp(36px, 4vw, 56px) 0 0;
+  padding: 0;
+}
+
+.project02-archive-block {
+  width: 100%;
+  max-width: 1378px;
+  aspect-ratio: 1378 / 1388;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.project02-archive-block--02 {
+  max-width: 1352px;
+  aspect-ratio: 1352 / 1362;
+  margin-top: clamp(28px, 2.4vw, 38px);
+  overflow: visible;
+}
+
+.archive-title-row {
+  position: absolute;
+  left: clamp(10px, 1.2vw, 18px);
+  top: clamp(28px, 2.4vw, 38px);
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  z-index: 6;
+}
+
+.archive-label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(18px, 1.5vw, 26px);
+  letter-spacing: 0.06em;
+  color: #8a2a36;
+}
+
+.archive-title-row h3 {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #6f1f2f;
+}
+
+.archive-summary {
+  position: absolute;
+  left: clamp(10px, 1.2vw, 18px);
+  top: clamp(78px, 6.4vw, 104px);
+  max-width: min(86%, 1050px);
+  margin: 0;
+  font-size: clamp(17px, 1.35vw, 23px);
+  line-height: 1.46;
+  color: rgba(86, 51, 40, 0.92);
+  z-index: 5;
+}
+
+.archive01-layout {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.archive01-visuals {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.archive-cover-card,
+.archive-creative,
+.archive-report-image {
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 16px 30px rgba(98, 61, 39, 0.22);
+}
+
+.archive-cover-card {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.archive-cover-card img,
+.archive-creative img,
+.archive-report-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.archive-cover-card--large img,
+.archive-cover-card--small img {
+  height: auto;
+  object-fit: contain;
+}
+
+.archive-cover-card--large {
+  position: absolute;
+  left: clamp(16px, 2vw, 30px);
+  top: clamp(138px, 11.5vw, 182px);
+  z-index: 1;
+  width: 49.5%;
+  height: auto;
+  transform: none;
+}
+
+.archive-cover-card--small {
+  position: absolute;
+  left: clamp(264px, 23vw, 378px);
+  top: clamp(274px, 24.5vw, 384px);
+  z-index: 2;
+  width: 49%;
+  height: auto;
+  margin-top: 0;
+  transform: none;
+}
+
+.archive-creative {
+  position: absolute;
+  left: clamp(18px, 2vw, 30px);
+  right: clamp(18px, 2vw, 30px);
+  bottom: clamp(-8px, -0.6vw, 0px);
+  width: auto;
+  aspect-ratio: 3.25 / 1;
+  border-radius: 0;
+  margin-top: 0;
+  z-index: 1;
+  overflow: visible;
+  box-shadow: none;
+  background: transparent;
+}
+
+.archive-creative img {
+  width: 110%;
+  max-width: none;
+  height: auto;
+  margin-left: -5%;
+}
+
+.archive-role {
+  position: absolute;
+  right: clamp(12px, 1.4vw, 22px);
+  top: clamp(292px, 24.5vw, 376px);
+  justify-self: end;
+  display: grid;
+  gap: 18px;
+  padding-top: 0;
+  z-index: 4;
+}
+
+.archive-role-kicker {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(18px, 1.7vw, 26px);
+  letter-spacing: 0.1em;
+  color: #8a2a36;
+  text-align: right;
+}
+
+.archive-role-tags {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 12px 12px;
+  justify-content: end;
+  justify-items: end;
+}
+
+.archive-role-tags li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #563328;
+  font-size: clamp(14px, 1vw, 17px);
+  white-space: nowrap;
+}
+
+.archive02-layout {
+  position: absolute;
+  left: clamp(16px, 2vw, 30px);
+  right: clamp(16px, 2vw, 30px);
+  top: clamp(150px, 12.5vw, 202px);
+  display: grid;
+  grid-template-columns: minmax(0, 7.15fr) minmax(250px, 2.85fr);
+  gap: clamp(20px, 2vw, 30px);
+  align-items: start;
+  z-index: 2;
+}
+
+.archive-report-image {
+  aspect-ratio: 1.82 / 1.12;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.archive-case-summary {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+  padding-top: clamp(6px, 0.9vw, 12px);
+  margin-left: 10px;
+}
+
+.archive-case {
+  display: grid;
+  gap: 10px;
+  color: #2b1c19;
+}
+
+.archive-case-label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(20px, 1.8vw, 28px);
+  letter-spacing: 0.06em;
+  color: #8a2a36;
+}
+
+.archive-case strong {
+  font-size: clamp(31px, 3.05vw, 50px);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  font-weight: 800;
+}
+
+.archive-case span,
+.archive-case em {
+  font-style: normal;
+  font-size: clamp(16px, 1.2vw, 22px);
+  line-height: 1.2;
+}
+
+.archive-case--secondary {
+  gap: 8px;
+}
+
+.archive-case--secondary strong {
+  font-size: clamp(22px, 2.1vw, 34px);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.archive-case em {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: #6f1f2f;
+}
+
+.archive-case b {
+  font-weight: 800;
+}
+
+.project02-archive-block--02 .archive-title-row {
+  top: clamp(44px, 3.4vw, 67px);
+}
+
+.project02-archive-block--02 .archive-summary {
+  top: clamp(113px, 9vw, 147px);
+}
+
+.archive-variation-row {
+  position: absolute;
+  left: clamp(16px, 2vw, 30px);
+  right: clamp(16px, 2vw, 30px);
+  bottom: -150px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 2vw, 30px);
+  align-items: start;
+  margin-top: 0;
+  z-index: 3;
+}
+
+.project02-archive-block--02 .archive02-layout {
+  top: clamp(212px, 17.2vw, 274px);
+}
+
+.archive-variation-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "copy copy"
+    "placeholder media";
+  gap: 12px;
+  align-content: start;
+  align-items: end;
+  position: relative;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.archive-variation-media {
+  grid-area: media;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.archive-variation-media img {
+  width: 72%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  align-self: end;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+.archive-variation-copy {
+  grid-area: copy;
+  display: grid;
+  gap: 8px;
+  min-height: 74px;
+}
+
+.archive-variation-chip {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #7a1e2c;
+  font-family: var(--font-mono);
+  font-size: clamp(14px, 1.05vw, 17px);
+  font-weight: 700;
+}
+
+.archive-variation-text {
+  margin: 0;
+  font-size: clamp(14px, 1.05vw, 18px);
+  line-height: 1.48;
+  color: rgba(86, 51, 40, 0.92);
+}
+
+.archive-variation-video {
+  grid-area: placeholder;
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: 96.8%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 0.6 / 1;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  clip-path: inset(0 3% 0 3%);
+  overflow: hidden;
+  justify-self: start;
+  align-self: end;
+}
+
+.archive-variation-note {
+  position: absolute;
+  left: clamp(16px, 2vw, 30px);
+  right: clamp(16px, 2vw, 30px);
+  bottom: clamp(360px, 29vw, 430px);
+  margin: 0;
+  font-size: clamp(14px, 1.05vw, 18px);
+  line-height: 1.4;
+  color: rgba(86, 51, 40, 0.9);
+  z-index: 3;
+}
+
+/* Make Archive 02 height expand with content instead of fixed artboard sizing. */
+.project02-archive-block--02 {
+  aspect-ratio: auto;
+  height: auto;
+  min-height: 0;
+  padding: clamp(30px, 2.4vw, 40px) clamp(16px, 2vw, 30px) clamp(40px, 3.2vw, 54px);
+}
+
+.project02-archive-block--02 .archive-title-row,
+.project02-archive-block--02 .archive-summary,
+.project02-archive-block--02 .archive02-layout,
+.project02-archive-block--02 .archive-variation-row,
+.project02-archive-block--02 .archive-variation-note {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+}
+
+.project02-archive-block--02 .archive-title-row {
+  margin: 0;
+}
+
+.project02-archive-block--02 .archive-summary {
+  margin: clamp(10px, 0.9vw, 14px) 0 0;
+  max-width: min(95%, 1080px);
+}
+
+.project02-archive-block--02 .archive02-layout {
+  margin-top: clamp(20px, 1.8vw, 28px);
+}
+
+.project02-archive-block--02 .archive-variation-row {
+  margin-top: clamp(26px, 2.2vw, 34px);
+}
+
+.project02-archive-block--02 .archive-variation-card {
+  min-height: 620px;
+}
+
+.project02-archive-block--02 .archive-variation-note {
+  margin-top: clamp(14px, 1.2vw, 18px);
+}
+
+@media (max-width: 1200px) {
+  .project02-folder-wrap {
+    min-width: 1180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project02-folder-wrap {
+    min-width: 1180px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project02-folder-wrap {
+    min-width: 1180px;
+  }
+}
+/* ==========================================================
    PORTFOLIO.CSS  ?? Minhee Ha
    Sections: nav / home / profile / skills / index
    Each section = 1 viewport  (scroll-snap)
