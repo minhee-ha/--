@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 02 - Marketing</title>
-    <link rel="stylesheet" href="./portfolio.css?v=20260618-01" />
+    <link rel="stylesheet" href="./portfolio.css?v=20260616-11" />
   </head>
   <body class="page-project page-project-02">
     <div class="page-wrap">
@@ -56,7 +56,6 @@
                 </div>
 
                 <figure class="archive-creative">
-                  <p class="archive-creative-label">바이럴 광고 이미지 작업 예시:</p>
                   <img src="./images/projects2_크리에이티브.png" alt="광고 크리에이티브 이미지" />
                 </figure>
 
@@ -72,58 +71,59 @@
               </div>
             </section>
 
-            <section class="project02-archive-block project02-archive-block--02 archive02" aria-label="Archive 02">
+            <section class="project02-archive-block project02-archive-block--02" aria-label="Archive 02">
               <div class="archive-title-row">
                 <p class="archive-label">Archive 02.</p>
                 <h3>성과 최적화</h3>
               </div>
               <p class="archive-summary">데이터 분석 기반 광고 구조 개선으로 전환 성과를 끌어올렸습니다.</p>
 
-              <div class="archive02-top">
-                <div class="archive02-analysis" aria-label="광고 성과 분석 자료">
-                  <figure class="archive-analysis-image">
-                    <img src="./images/projects2_광고개선.png" alt="광고 개선 자료 이미지" />
-                  </figure>
-                </div>
+              <div class="archive02-layout">
+                <figure class="archive-report-image">
+                  <img src="./images/projects2_광고개선.png" alt="광고 개선 자료 이미지" />
+                </figure>
 
-                <div class="archive02-case">
-                  <aside class="archive-case-summary" aria-label="성과 요약">
-                    <div class="archive-case archive-case--primary">
-                      <p class="archive-case-label">CASE 01.</p>
-                      <strong>4개월 → 2개월</strong>
-                      <span>ROAS <b>1.00 → 3.15</b></span>
-                      <em>315% 개선</em>
-                    </div>
+                <aside class="archive-case-summary" aria-label="성과 요약">
+                  <div class="archive-case archive-case--primary">
+                    <p class="archive-case-label">CASE 01.</p>
+                    <strong>4개월 → 2개월</strong>
+                    <span>ROAS <b>1.00 → 3.15</b></span>
+                    <em>315% 개선</em>
+                  </div>
 
-                    <div class="archive-case archive-case--secondary">
-                      <p class="archive-case-label">CASE 02.</p>
-                      <strong>광고 A B C → 광고 B A C</strong>
-                      <span>구매수 <b>0건 → 18건</b></span>
-                    </div>
-                  </aside>
-                </div>
+                  <div class="archive-case archive-case--secondary">
+                    <p class="archive-case-label">CASE 02.</p>
+                    <strong>광고 A B C → 광고 B A C</strong>
+                    <span>구매수 <b>0건 → 18건</b></span>
+                  </div>
+                </aside>
               </div>
 
-              <p class="archive02-description"><strong>베리에이션 광고 운영</strong> 동일 크리에이티브를 헤드-바디-테일로 분리해 첫 훅킹을 변경한 버전으로 광고 효율을 높였습니다.</p>
+              <p class="archive-variation-note"><strong>베리에이션 광고 운영</strong> 동일 크리에이티브를 헤드-바디-테일로 분리해 첫 훅킹을 변경한 버전으로 광고 효율을 높였습니다.</p>
 
-              <div class="archive02-bottom" aria-label="광고 베리에이션 영상 영역">
-                <div class="video-group left">
-                  <video src="./video/광고베리에이션1.mp4" autoplay muted loop playsinline controls aria-label="광고 베리에이션 영상 1"></video>
-                  <div class="thumbnail">
+              <div class="archive-variation-row" aria-label="광고 베리에이션 영상 영역">
+                <article class="archive-variation-card">
+                  <p class="archive-variation-placeholder-label">광고베리에이션 1.mp4</p>
+                  <figure class="archive-variation-media">
+                    <img src="./images/후킹1.png" alt="릴스 썸네일 1" />
+                  </figure>
+                  <div class="archive-variation-copy">
                     <span class="archive-variation-chip">할인 강조</span>
-                    <img src="./images/후킹1.png" alt="광고 베리에이션 썸네일 1" />
+                    <p class="archive-variation-text">처음 3초 훅킹을 강하게 주는 할인 중심 버전입니다.</p>
                   </div>
-                </div>
-
-                <div class="arrow" aria-hidden="true">→</div>
-
-                <div class="video-group right">
-                  <video src="./video/광고베리에이션2.mp4" autoplay muted loop playsinline controls aria-label="광고 베리에이션 영상 2"></video>
-                  <div class="thumbnail">
+                  <video class="archive-variation-video" src="./video/광고베리에이션1.mp4" autoplay muted loop playsinline controls></video>
+                </article>
+                <article class="archive-variation-card">
+                  <p class="archive-variation-placeholder-label">광고베리에이션 2.mp4</p>
+                  <figure class="archive-variation-media">
+                    <img src="./images/후킹2.png" alt="릴스 썸네일 2" />
+                  </figure>
+                  <div class="archive-variation-copy">
                     <span class="archive-variation-chip">BNA 강조</span>
-                    <img src="./images/후킹2.png" alt="광고 베리에이션 썸네일 2" />
+                    <p class="archive-variation-text">문제 인지와 솔루션 전개를 빠르게 보여주는 버전입니다.</p>
                   </div>
-                </div>
+                  <video class="archive-variation-video" src="./video/광고베리에이션2.mp4" autoplay muted loop playsinline controls></video>
+                </article>
               </div>
             </section>
           </div>
