@@ -503,8 +503,13 @@
    PROJECT 02: Match Marketing Reference Layout
    ========================================================== */
 .page-project-02 .project-head {
+  margin-top: clamp(18px, 2vw, 28px);
   grid-template-columns: 1fr;
   gap: clamp(10px, 1.1vw, 14px);
+}
+
+.page-project-02 .project-main {
+  padding: clamp(56px, 5vw, 84px) clamp(20px, 2.2vw, 34px) clamp(20px, 2.2vw, 34px);
 }
 
 .page-project-02 .project-head > :not(.strategy-block) {
@@ -529,20 +534,22 @@
   display: inline-grid;
   gap: 2px;
   justify-items: center;
-  padding: 11px 18px;
-  border-radius: 18px;
+  padding: 14px 24px;
+  border-radius: 22px;
   font-family: var(--font-mono);
   min-width: clamp(130px, 9vw, 176px);
+  min-height: 74px;
+  font-size: clamp(20px, 1.5vw, 27px);
 }
 
 .page-project-02 .badge-row span small {
-  font-size: clamp(11px, 0.82vw, 14px);
+  font-size: clamp(15px, 1.05vw, 19px);
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.08;
 }
 
 .page-project-02 .badge-row span strong {
-  font-size: clamp(18px, 1.12vw, 21px);
+  font-size: inherit;
   font-weight: 700;
   line-height: 1.05;
 }
@@ -597,6 +604,26 @@
   min-height: 42px;
   padding: 0 16px;
   font-size: clamp(15px, 1.02vw, 18px);
+}
+
+.page-project-03 .project-head {
+  margin-top: clamp(18px, 2vw, 28px);
+}
+
+.page-project-03 .project-main {
+  padding: clamp(56px, 5vw, 84px) clamp(20px, 2.2vw, 34px) clamp(20px, 2.2vw, 34px);
+}
+
+.page-project-04 .project-head,
+.page-project-05 .project-head,
+.page-project-06 .project-head {
+  margin-top: clamp(18px, 2vw, 28px);
+}
+
+.page-project-04 .project-main,
+.page-project-05 .project-main,
+.page-project-06 .project-main {
+  padding: clamp(56px, 5vw, 84px) clamp(20px, 2.2vw, 34px) clamp(20px, 2.2vw, 34px);
 }
 
 @media (max-width: 1180px) {
@@ -2041,6 +2068,181 @@ html {
 }
 
 /* ==========================================================
+   PROJECT 04: Archive Layout Refactor (Layout Only)
+   ========================================================== */
+.page-project-04 .project-folder {
+  margin-top: 58px;
+  background:
+    linear-gradient(180deg, transparent 0 600px, #e6b7a6 600px 100%),
+    url('./images/Vector 5.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top center;
+  background-size: 100% 100%, 100% auto;
+}
+
+.page-project-04 .folder-content {
+  display: block;
+  padding: 176px 36px 120px;
+}
+
+.page-project-04 .archive {
+  margin-bottom: 110px;
+}
+
+.page-project-04 .archive-title {
+  margin: 0 0 28px;
+  color: var(--deep-red);
+  font-family: var(--font-mono);
+  font-size: clamp(24px, 2.4vw, 34px);
+  font-weight: 800;
+}
+
+.page-project-04 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-project-04 .archive-main-img,
+.page-project-04 .phone-gallery img,
+.page-project-04 .archive03-main-img {
+  width: 100%;
+}
+
+.page-project-04 .archive-desc-with-thumb,
+.page-project-04 .archive-thumb-text-group {
+  display: grid;
+  grid-template-columns: clamp(180px, 18vw, 354px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin-top: 46px;
+  width: min(100%, 90%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-project-04 .archive-desc-with-thumb > img,
+.page-project-04 .archive-thumb-text-group > img {
+  width: clamp(240px, 24.75vw, 354px);
+  height: auto;
+  object-fit: contain;
+}
+
+.page-project-04 .archive-desc,
+.page-project-04 .archive-desc-with-thumb p,
+.page-project-04 .archive-thumb-text-group p {
+  background: #f7ded6;
+  border-radius: 34px;
+  padding: 60px 46px;
+  min-height: clamp(180px, 16vw, 260px);
+}
+
+.page-project-04 .archive-desc.archive-desc-with-thumb {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.page-project-04 .archive-desc {
+  margin-top: 52px;
+  width: min(100%, 88%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-project-04 .archive-desc p,
+.page-project-04 .archive-desc-with-thumb p,
+.page-project-04 .archive-thumb-text-group p {
+  margin: 8px 0;
+  font-size: clamp(20px, 1.65vw, 26px);
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+.page-project-04 .phone-gallery {
+  width: 100%;
+}
+
+.page-project-04 .badge-row {
+  margin-top: 12px;
+  gap: 14px;
+}
+
+.page-project-04 .project-note {
+  font-size: clamp(17px, 1.42vw, 22px);
+  line-height: 1.64;
+}
+
+.page-project-04 .badge-row span {
+  min-height: 74px;
+  border-radius: 22px;
+  padding: 14px 24px;
+  font-size: clamp(20px, 1.5vw, 27px);
+  font-weight: 700;
+}
+
+.page-project-04 .badge-row span strong {
+  font-size: inherit;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.page-project-04 .archive-03 .feature-gallery {
+  display: block;
+}
+
+.page-project-04 .archive-03 .feature-gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-project-04 .archive-03 .result-gallery {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 44px 36px;
+}
+
+.page-project-04 .archive-03 .result-gallery .gallery-item {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-project-04 .archive-03 .result-gallery .gallery-item--2 {
+  margin-top: 168px;
+}
+
+.page-project-04 .archive-03 .result-gallery .gallery-item--3 {
+  margin-top: 72px;
+}
+
+.page-project-04 .archive-03 .result-gallery .gallery-item--4 {
+  margin-top: -125px;
+}
+
+@media (max-width: 900px) {
+  .page-project-04 .folder-content {
+    padding: 122px 20px 80px;
+  }
+
+  .page-project-04 .archive-desc-with-thumb,
+  .page-project-04 .archive-thumb-text-group {
+    grid-template-columns: clamp(140px, 28vw, 220px) minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .page-project-04 .archive-03 .result-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .page-project-04 .archive-03 .result-gallery .gallery-item--2,
+  .page-project-04 .archive-03 .result-gallery .gallery-item--3,
+  .page-project-04 .archive-03 .result-gallery .gallery-item--4 {
+    margin-top: 0;
+  }
+}
+
+/* ==========================================================
    PROJECT 02-06: Hero Alignment With Project 01
    ========================================================== */
 .page-project:not(.page-project-01) {
@@ -2096,13 +2298,13 @@ html {
 }
 
 .page-project:not(.page-project-01) .badge-row span {
-  min-height: clamp(40px, 2.8vw, 48px);
+  min-height: 74px;
   min-width: 0;
-  border-radius: 1.25rem;
+  border-radius: 22px;
   font-family: var(--font-mono);
-  font-size: clamp(12px, 0.88vw, 15px);
+  font-size: clamp(20px, 1.5vw, 27px);
   line-height: 1.1;
-  padding: 8px clamp(14px, 1.12vw, 18px);
+  padding: 14px 24px;
 }
 
 .page-project:not(.page-project-01) .strategy-block {
@@ -2153,6 +2355,10 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: clamp(18px, 2vw, 28px);
+  left: clamp(18px, 2vw, 28px);
+  z-index: 1000;
   margin: 0;
   padding: 0.16rem;
   border-radius: 999px;
@@ -2220,7 +2426,7 @@ html {
 .page-project-01 .project-detail {
   width: min(100%, 1400px);
   margin: 0 auto;
-  padding: clamp(20px, 2.2vw, 34px);
+  padding: clamp(56px, 5vw, 84px) clamp(20px, 2.2vw, 34px) clamp(20px, 2.2vw, 34px);
 }
 
 .page-project-01 .project01-main,
@@ -2234,6 +2440,7 @@ html {
   position: relative;
   width: 100%;
   max-width: 1400px;
+  margin-top: clamp(18px, 2vw, 28px);
 }
 
 .page-project-01 .project01-frame46 {
@@ -2275,6 +2482,10 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: clamp(18px, 2vw, 28px);
+  left: clamp(18px, 2vw, 28px);
+  z-index: 1000;
   width: auto;
   height: auto;
   margin: 0;
@@ -2346,8 +2557,8 @@ html {
 
 .page-project-01 .project01-note {
   margin: 0;
-  font-size: clamp(14px, 1.12cqw, 18px);
-  line-height: 1.58;
+  font-size: clamp(17px, 1.34cqw, 22px);
+  line-height: 1.64;
   color: #2c2c2c;
   max-width: 76%;
 }
@@ -2366,11 +2577,11 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: clamp(40px, 2.8cqw, 48px);
-  padding: 8px clamp(14px, 1.12cqw, 18px);
-  border-radius: 1.25rem;
+  min-height: 74px;
+  padding: 14px 24px;
+  border-radius: 22px;
   font-family: var(--font-mono);
-  font-size: clamp(12px, 0.88cqw, 15px);
+  font-size: clamp(20px, 1.5vw, 27px);
   line-height: 1.1;
   font-weight: 700;
   color: #fff;
@@ -2458,9 +2669,11 @@ html {
 
 .page-project-01 .project01-bridge {
   width: 100%;
-  margin: 8px 0 6px;
+  margin: 132px 0 -142px;
   padding: 0 clamp(14px, 1.8vw, 24px);
   color: #3f342d;
+  position: relative;
+  z-index: 3;
 }
 
 .page-project-01 .project01-bridge-en {
@@ -2535,12 +2748,71 @@ html {
   align-items: start;
   gap: clamp(14px, 2vw, 24px);
   width: 100%;
-  margin: 70px 0 0;
+  margin: 170px 0 0;
   padding: 0;
 }
 
 .page-project-01 .project01-folder-vector3::after {
   content: none;
+}
+
+.page-project-01 .archive-card.project01-instagram-link {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1fr) auto;
+  width: 100%;
+  margin-top: clamp(28px, 3vw, 42px);
+  padding: clamp(18px, 1.9vw, 26px) clamp(28px, 3vw, 42px);
+  gap: clamp(18px, 2vw, 28px);
+  align-items: center;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.page-project-01 .project01-instagram-link__copy {
+  display: grid;
+  gap: clamp(8px, 0.9vw, 12px);
+}
+
+.page-project-01 .project01-instagram-link__label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(13px, 1vw, 18px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7f1a2d;
+}
+
+.page-project-01 .project01-instagram-link__title {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(20px, 2vw, 34px);
+  line-height: 1.18;
+  color: var(--ink);
+}
+
+.page-project-01 .project01-instagram-link__desc {
+  margin: 0;
+  font-size: clamp(13px, 1.02vw, 17px);
+  line-height: 1.58;
+  color: #3f342d;
+}
+
+.page-project-01 .project01-instagram-link__anchor {
+  color: #3b312a;
+  font-family: var(--font-mono);
+  font-size: clamp(20px, 1.9vw, 30px);
+  line-height: 1.2;
+  text-decoration: none;
+  padding: clamp(12px, 1.2vw, 16px) clamp(16px, 1.6vw, 22px);
+  border-radius: 999px;
+  background: rgba(122, 30, 44, 0.08);
+  white-space: nowrap;
+}
+
+.page-project-01 .project01-instagram-link__anchor:hover {
+  color: var(--color-red);
 }
 
 .page-project-01 .archive-card {
@@ -2816,7 +3088,7 @@ html {
 
 @media (max-width: 720px) {
   .page-project-01 .project-detail {
-    padding: clamp(20px, 5vw, 28px);
+    padding: clamp(56px, 12vw, 76px) clamp(20px, 5vw, 28px) clamp(20px, 5vw, 28px);
   }
 
   .page-project-01 .project01-frame46 {
@@ -2851,12 +3123,22 @@ html {
   .page-project-01 .project01-archive-grid {
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: 120px;
     padding: 0;
+  }
+
+  .page-project-01 .project01-bridge {
+    margin: 84px 0 -86px;
   }
 
   .page-project-01 .archive-card {
     grid-template-columns: 1fr;
     transform: none;
+  }
+
+  .page-project-01 .archive-card.project01-instagram-link {
+    grid-template-columns: 1fr;
+    align-items: start;
   }
 
   .page-project-01 .archive-insight,
@@ -3127,6 +3409,11 @@ html {
 
 
 @media (max-width: 800px) {
+  .page-project .back-to-index {
+    top: 16px;
+    left: 16px;
+  }
+
   .home-stage {
     width: 800px;
     aspect-ratio: 16 / 9;
@@ -3752,6 +4039,37 @@ html {
   gap: clamp(16px, 1.8vw, 24px);
 }
 
+.page-project-03 .p3-campaign-concept {
+  grid-column: 2 / -1;
+  padding: clamp(18px, 1.8vw, 26px);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.36);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: clamp(280px, 35vw, 380px);
+  overflow: hidden;
+}
+
+.page-project-03 .p3-campaign-concept h3 {
+  margin: 0 0 clamp(12px, 1vw, 16px);
+  color: var(--deep-red);
+  font-family: var(--font-mono);
+  font-size: clamp(16px, 1.25vw, 20px);
+  font-weight: 700;
+}
+
+.page-project-03 .p3-campaign-concept p {
+  margin: 0 0 clamp(10px, 0.8vw, 14px);
+  font-size: clamp(13px, 1.05vw, 16px);
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.page-project-03 .p3-campaign-concept p:last-child {
+  margin-bottom: 0;
+}
+
 .page-project-03 .p3-prompt-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3937,5 +4255,23 @@ html {
   .page-project-03 .p3-prompt-case img {
     height: auto;
   }
+}
+
+/* Keep Project 04 top badges larger than shared project hero defaults. */
+.page-project.page-project-04 .project-head .badge-row span {
+  min-height: 74px;
+  border-radius: 22px;
+  padding: 14px 24px;
+  font-size: clamp(20px, 1.5vw, 27px);
+}
+
+.page-project.page-project-04 .project-head .badge-row span strong {
+  font-size: inherit;
+  line-height: 1.05;
+}
+
+.page-project.page-project-04 .project-head .project-note {
+  font-size: clamp(17px, 1.42vw, 22px);
+  line-height: 1.64;
 }
 
