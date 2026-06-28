@@ -16,13 +16,69 @@
         </section>
 
         <section class="project-folder folder-green">
-          <div class="folder-content">
-            <div class="asset-slot" data-path="/images/projects/6/content-1.png"></div>
-            <div class="asset-slot" data-path="/images/projects/6/content-2.png"></div>
-            <div class="asset-slot" data-path="/images/projects/6/content-3.png"></div>
+          <div class="folder-content project06-content">
+            <article class="project06-site-card" aria-labelledby="project06-site-1-title">
+              <div class="project06-site-head">
+                <h2 id="project06-site-1-title">[개인 프로젝트] 티 음료 브랜드 'BLOOM'웹사이트 </h2>
+                <button class="project06-toggle" type="button" aria-expanded="false" aria-controls="project06-site-1-embed">펼쳐보기</button>
+              </div>
+
+              <p class="project06-url">https://websiteproject-mbc.netlify.app</p>
+
+              <div class="project06-embed" id="project06-site-1-embed" hidden>
+                <iframe
+                  src="https://websiteproject-mbc.netlify.app"
+                  title="MBC website project preview"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <p class="project06-fallback">임베드가 보이지 않으면 <a href="https://websiteproject-mbc.netlify.app" target="_blank" rel="noreferrer">새 탭에서 열기</a></p>
+              </div>
+            </article>
+
+            <article class="project06-site-card" aria-labelledby="project06-site-2-title">
+              <div class="project06-site-head">
+                <h2 id="project06-site-2-title">[팀 프로젝트] THE NORTH FACE 웹사이트 리디자인</h2>
+                <button class="project06-toggle" type="button" aria-expanded="false" aria-controls="project06-site-2-embed">펼쳐보기</button>
+              </div>
+
+              <p class="project06-url">https://teamnature-gflr.vercel.app/</p> <hr>
+              <p>역할: 브랜드 영상 제작, Product UI 디자인, 상세페이지 히어로 이미지 및 프로토타입 제작</p>
+              <div class="project06-embed" id="project06-site-2-embed" hidden>
+                <iframe
+                  src="https://teamnature-gflr.vercel.app/"
+                  title="Team Nature project preview"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <p class="project06-fallback">임베드가 보이지 않으면 <a href="https://teamnature-gflr.vercel.app/" target="_blank" rel="noreferrer">새 탭에서 열기</a></p>
+              </div>
+            </article>
           </div>
         </section>
       </main>
     </div>
+
+    <script>
+      (function () {
+        const toggles = document.querySelectorAll('.project06-toggle');
+        if (!toggles.length) return;
+
+        toggles.forEach((button) => {
+          button.addEventListener('click', () => {
+            const targetId = button.getAttribute('aria-controls');
+            const embed = targetId ? document.getElementById(targetId) : null;
+            if (!embed) return;
+
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            const nextExpanded = !isExpanded;
+
+            button.setAttribute('aria-expanded', String(nextExpanded));
+            button.textContent = nextExpanded ? '접기' : '펼쳐보기';
+            embed.hidden = !nextExpanded;
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
