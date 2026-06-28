@@ -5,3 +5,6 @@
 *.prproj
 **/Adobe Premiere Pro Auto-Save/
 **/Adobe Premiere Pro Auto-Save/**
+
+# Local symlink path (breaks GitHub Pages build on runners)
+영상 프로젝트
