@@ -1,0 +1,49 @@
+name: Deploy Portfolio to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare static site artifact
+        run: |
+          mkdir -p _site
+          rsync -av ./ _site/ \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '*.psd' \
+            --exclude '*.prproj' \
+            --exclude '*.prin' \
+            --exclude 'Adobe Premiere Pro Auto-Save/' \
+            --exclude '영상 프로젝트/' \
+            --exclude '피그마/' \
+            --exclude '*.code-workspace' \
+            --exclude '.DS_Store'
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
