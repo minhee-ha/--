@@ -2781,13 +2781,13 @@ html {
 @media (min-width: 1081px) {
   .page-project-01 .project01-folder-wrap,
   .page-project-01 .folder-section {
-    margin-top: -114px;
+    margin-top: -36px;
   }
 }
 
 .page-project-01 .project01-bridge {
   width: 100%;
-  margin: 132px 0 -142px;
+  margin: 56px 0 -142px;
   padding: 0 clamp(14px, 1.8vw, 24px);
   color: #3f342d;
   position: relative;
@@ -3246,7 +3246,7 @@ html {
   }
 
   .page-project-01 .project01-bridge {
-    margin: 84px 0 -86px;
+    margin: 32px 0 -86px;
   }
 
   .page-project-01 .archive-card {
