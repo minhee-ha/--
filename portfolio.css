@@ -4233,11 +4233,14 @@ html {
   background: #2c2c2c;
 }
 
-.page-project-03 .p3-role-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-content: start;
+.page-project-03 .p3-role-video {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  mix-blend-mode: multiply;
 }
 
 .page-project-03 .p3-role-row span {
