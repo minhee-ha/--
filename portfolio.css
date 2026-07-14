@@ -4687,7 +4687,7 @@ html {
   max-width: 100%;
   margin: 0 auto;
   gap: clamp(16px, 1.4vw, 22px);
-  transform: translate(clamp(-28px, -1.8vw, -12px), clamp(-104px, -6.8vw, -68px));
+  transform: translate(clamp(-12px, -0.8vw, 4px), clamp(-104px, -6.8vw, -68px));
 }
 
 .page-project-05 .project05-biz-sub img {
