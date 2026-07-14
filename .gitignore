@@ -6,5 +6,9 @@
 **/Adobe Premiere Pro Auto-Save/
 **/Adobe Premiere Pro Auto-Save/**
 
+# Photoshop source files (exclude from GitHub)
+*.psd
+*.PSD
+
 # Local symlink path (breaks GitHub Pages build on runners)
 영상 프로젝트
