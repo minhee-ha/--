@@ -83,3 +83,10 @@
 .page-project-03 .p3-industry-video-grid--five .p3-video-placeholder{min-width:0;width:100%;box-sizing:border-box}
 @media(max-width:850px){.page-project-03 .p3-industry-video-grid--five{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:560px){.page-project-03 .p3-industry-video-grid--five{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Uploaded reel media: preserve vertical format and defer network loading */
+.page-project-03 .p3-uploaded-reel{display:block;width:100%;max-width:100%;min-width:0;aspect-ratio:9/16;object-fit:contain;background:#171719;border-radius:10px}
+.page-project-03 .p3-industry-video-grid .p3-uploaded-reel{margin:0}
+.page-project-03 .p3-industry-fnb-case .p3-uploaded-reel{margin:0 0 20px}
+.page-project-03 .p3-consistency-shot--image{padding:0;overflow:hidden}
+.page-project-03 .p3-consistency-shot--image img{display:block;width:100%;height:100%;object-fit:cover}
