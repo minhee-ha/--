@@ -1,6 +1,6 @@
 # Video Content — 업종별 영상 업로드 가이드
 
-대상: `projects_3.html`의 02 IT Service / 03 Electronics / 04 F&B. 고객사 이름을 웹페이지에 노출하지 않는 구성.
+대상: `projects_3.html`의 02 IT Service / 03 Electronics / 04 F&B & Wellness. 고객사 이름을 웹페이지에 노출하지 않는 구성.
 
 ## 1. 업로드 폴더
 
@@ -25,12 +25,13 @@ images/projects/3/industry-reels/
 │   ├── electronics-01.mp4
 │   ├── electronics-02.mp4
 │   └── electronics-03.mp4
-└── fnb/
-    ├── premium-coffee-01.mp4
-    └── food-promotion-01.mp4
+└── fnb-wellness/
+    ├── premium-beverage-01.mp4
+    ├── food-promotion-01.mp4
+    └── wellness-product-01.mp4
 ```
 
-영상은 우선 10개(IT 5, 전자기기 3, F&B 2), 비교 이미지 4개, 썸네일 10개. 실제 공개 가능 영상 중 가장 완성도 높은 편으로 선별. 모든 에피소드를 GitHub에 올릴 필요는 없음.
+영상은 우선 11개(IT 5, 전자기기 3, F&B & Wellness 3), 비교 이미지 4개, 썸네일 10개. 실제 공개 가능 영상 중 가장 완성도 높은 편으로 선별. 모든 에피소드를 GitHub에 올릴 필요는 없음.
 
 ## 2. 기존 콘텐츠
 
@@ -56,7 +57,7 @@ VS Code 터미널에서 프로젝트 폴더로 이동한 상태로:
 git branch --show-current
 git status
 git pull --ff-only
-mkdir -p images/projects/3/industry-reels/{it-service/character/thumbs,electronics,fnb}
+mkdir -p images/projects/3/industry-reels/{it-service/character/thumbs,electronics,fnb-wellness}
 ```
 
 `git branch --show-current`가 `portfolio-six-sections-20261021`인지 확인. Mac Finder에서 각 폴더에 파일 복사 후:
