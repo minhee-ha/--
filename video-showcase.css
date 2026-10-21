@@ -74,3 +74,6 @@
 .page-project-03 .p3-industry-fnb-grid--three .p3-industry-fnb-case p{font-size:13px;line-height:1.6}
 .page-project-03 .p3-video-placeholder--wellness{background:linear-gradient(145deg,#b9d0d8,#627e95);color:#1b3344}
 @media(max-width:650px){.page-project-03 .p3-industry-fnb-grid--three{grid-template-columns:1fr;max-width:390px}.page-project-03 .p3-industry-fnb-grid--three .p3-industry-fnb-case .p3-video-placeholder{max-width:330px}}
+
+.page-project-03 .p3-industry-video-grid--four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:850px){.page-project-03 .p3-industry-video-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}}
