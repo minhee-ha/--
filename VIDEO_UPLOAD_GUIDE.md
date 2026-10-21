@@ -1,6 +1,6 @@
 # Video Content — 업종별 영상 업로드 가이드
 
-대상: `projects_3.html`의 02 IT Service / 03 Electronics / 04 F&B & Wellness. 고객사 이름을 웹페이지에 노출하지 않는 구성.
+대상: `projects_3.html`의 02 Electronics / 03 IT Service / 04 F&B & Wellness. 고객사 이름을 웹페이지에 노출하지 않는 구성.
 
 ## 1. 업로드 폴더
 
@@ -31,7 +31,7 @@ images/projects/3/industry-reels/
     └── wellness-product-01.mp4
 ```
 
-영상은 우선 11개(IT 5, 전자기기 3, F&B & Wellness 3), 비교 이미지 4개, 썸네일 10개. 실제 공개 가능 영상 중 가장 완성도 높은 편으로 선별. 모든 에피소드를 GitHub에 올릴 필요는 없음.
+영상은 우선 12개(IT 대표 3편 + 서비스 소개 2편, 전자기기 4편, F&B & Wellness 3편), 비교 이미지 4개, 썸네일 10개. 실제 공개 가능 영상 중 가장 완성도 높은 편으로 선별. AI 캐릭터 시리즈 10편 이상은 포트폴리오에서 전체 아카이브로 보여주며, 현재 가이드의 대표 3편은 메인 노출 영상 수일 뿐 전체 제작 편수를 뜻하지 않음. 전체 에피소드도 클릭 재생되게 할 경우 추가 영상 파일 업로드가 필요함.
 
 ## 2. 기존 콘텐츠
 
