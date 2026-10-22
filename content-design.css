@@ -1,0 +1,84 @@
+/* Content Design — separate stylesheet to preserve the existing portfolio layout. */
+.page-project-content-design .project-main {
+  padding-bottom: clamp(36px, 5vw, 76px);
+}
+.page-project-content-design .content-design-folder {
+  position: relative;
+  margin-top: clamp(42px, 5vw, 82px);
+  padding: clamp(35px, 5vw, 90px) clamp(18px, 4.5vw, 72px) clamp(52px, 6vw, 100px);
+  background: linear-gradient(170deg, #efc9b8 0%, #eeb8a8 38%, #d69d91 100%);
+  border-radius: 18px;
+}
+.page-project-content-design .content-design-folder::before {
+  content: '';
+  display: block;
+  width: min(46%, 320px);
+  height: 26px;
+  position: absolute;
+  left: 4%;
+  top: -24px;
+  border-radius: 16px 16px 0 0;
+  background: #efc9b8;
+}
+.page-project-content-design .content-design-folder-inner {
+  display: grid;
+  gap: clamp(46px, 5vw, 86px);
+}
+.page-project-content-design .content-design-archive-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.page-project-content-design .content-design-number {
+  color: #81253d;
+  font: 700 clamp(17px, 1.5vw, 23px)/1.2 var(--font-mono, monospace);
+  white-space: nowrap;
+}
+.page-project-content-design .content-design-archive-title h2 {
+  font-size: clamp(26px, 2.8vw, 43px);
+  line-height: 1.1;
+}
+.page-project-content-design .content-design-description {
+  max-width: 900px;
+  margin: 18px 0 27px;
+  line-height: 1.65;
+  font-size: clamp(15px, 1.2vw, 19px);
+}
+.page-project-content-design .content-design-placeholder {
+  min-height: clamp(300px, 35vw, 500px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  border: 2px dashed rgba(127, 26, 45, 0.37);
+  background: rgba(255,255,255,0.55);
+  border-radius: 18px;
+}
+.page-project-content-design .content-design-placeholder-mark {
+  color: #8a4052;
+  font: 700 13px var(--font-mono, monospace);
+  letter-spacing: .1em;
+}
+.page-project-content-design .content-design-placeholder strong {
+  color: #662c39;
+  font-size: clamp(25px, 3vw, 42px);
+}
+.page-project-content-design .content-design-placeholder p {
+  font-size: clamp(13px, 1.1vw, 17px);
+  line-height: 1.4;
+}
+.page-branding-editorial .branding-editorial-subhead {
+  margin-top: clamp(76px, 8vw, 132px);
+}
+.page-branding-editorial .branding-editorial-subhead h2 {
+  font-size: clamp(30px, 3.5vw, 54px);
+}
+@media (max-width: 700px) {
+ .page-project-content-design .content-design-folder { border-radius: 12px; }
+ .page-project-content-design .content-design-folder::before { height: 17px; top: -15px; }
+}
