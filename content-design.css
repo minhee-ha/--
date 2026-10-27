@@ -137,9 +137,24 @@
 .page-project-content-design .cd-brand-grid button:hover img{transform:translateY(-4px)}
 @media(max-width:540px){.page-project-content-design .cd-brand-grid--editorial button:first-child{grid-column:auto;grid-row:auto}}
 
-/* Archive 01 — five-across gallery, matching Marketing Archive 03 rhythm. */
-.page-project-content-design .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(7px,.9vw,18px);align-items:start}
-.page-project-content-design .cd-selected-grid--equal .cd-work-card b{font-size:clamp(12px,1vw,16px);line-height:1.4;overflow-wrap:anywhere}
-.page-project-content-design .cd-selected-grid--equal .cd-work-card>span:last-child{font-size:10px;line-height:1.5}
-@media(max-width:1000px){.page-project-content-design .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
-@media(max-width:600px){.page-project-content-design .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+
+/* Archive 01: Video Content-inspired section structure */
+.page-project-content-design .cd-archive01{border-top:1px solid rgba(94,57,57,.35);padding-top:clamp(28px,4vw,58px)}
+.page-project-content-design .cd-section-title{display:grid;grid-template-columns:64px minmax(0,1fr);gap:clamp(12px,2vw,28px);align-items:start;padding-bottom:clamp(26px,3vw,46px);border-bottom:1px solid rgba(94,57,57,.25)}
+.page-project-content-design .cd-section-index{font:700 clamp(30px,4vw,56px)/1 var(--font-mono,monospace);color:#8a354b}
+.page-project-content-design .cd-section-title h2{font-size:clamp(28px,3.6vw,52px);line-height:1.07;letter-spacing:-.04em}
+.page-project-content-design .cd-section-title p{margin-top:12px;font-size:clamp(14px,1.15vw,17px);line-height:1.65;color:#6f4e50}
+.page-project-content-design .cd-section-content{padding:clamp(28px,3.5vw,56px) 0 0}
+.page-project-content-design .cd-section-intro{max-width:850px;margin-bottom:clamp(34px,4vw,60px)}
+.page-project-content-design .cd-section-intro strong{display:block;font-size:clamp(24px,2.65vw,39px);line-height:1.2;letter-spacing:-.035em}
+.page-project-content-design .cd-section-intro p{margin-top:14px;max-width:760px;font-size:clamp(14px,1.15vw,17px);line-height:1.85;color:#6c5654}
+.page-project-content-design .cd-gallery-label{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(94,57,57,.2);font:700 11px/1.5 var(--font-mono,monospace);letter-spacing:.08em;color:#8b4352}
+.page-project-content-design .cd-archive01 .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(10px,1.2vw,22px)}
+.page-project-content-design .cd-archive01 .cd-work-card b{font-size:clamp(13px,1.2vw,18px);line-height:1.4}
+.page-project-content-design .cd-archive01 .cd-work-card>span:last-child{font-size:10px}
+.page-project-content-design .cd-production-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(35px,4vw,60px);padding-top:20px;border-top:1px solid rgba(94,57,57,.25)}
+.page-project-content-design .cd-production-points span{border:1px solid rgba(110,66,72,.35);border-radius:999px;padding:10px 15px;font-size:12px;color:#71404b;background:#fff8f366}
+.page-project-content-design .cd-production-focus{margin-top:20px;font-size:13px;line-height:1.8;color:#735c5a}
+.page-project-content-design .cd-production-focus b{margin-right:16px;color:#8a354b;font:700 12px var(--font-mono,monospace)}
+@media(max-width:1000px){.page-project-content-design .cd-archive01 .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.page-project-content-design .cd-section-title{grid-template-columns:42px minmax(0,1fr)}.page-project-content-design .cd-archive01 .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.page-project-content-design .cd-production-points span{padding:8px 11px}}
