@@ -136,3 +136,10 @@
 .page-project-content-design .cd-brand-grid--editorial button:first-child{grid-column:auto;grid-row:auto}
 .page-project-content-design .cd-brand-grid button:hover img{transform:translateY(-4px)}
 @media(max-width:540px){.page-project-content-design .cd-brand-grid--editorial button:first-child{grid-column:auto;grid-row:auto}}
+
+/* Archive 01 — five-across gallery, matching Marketing Archive 03 rhythm. */
+.page-project-content-design .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(7px,.9vw,18px);align-items:start}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card b{font-size:clamp(12px,1vw,16px);line-height:1.4;overflow-wrap:anywhere}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card>span:last-child{font-size:10px;line-height:1.5}
+@media(max-width:1000px){.page-project-content-design .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media(max-width:600px){.page-project-content-design .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
