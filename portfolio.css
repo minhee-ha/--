@@ -4921,3 +4921,58 @@ html {
 
 }
 
+
+/* Marketing Archive 03: isolate gallery from older absolute-positioned media rules. */
+.page-project-02 .project02-archive-block--03.archive03{
+  display:flex;
+  flex-direction:column;
+  gap:clamp(14px,1.8vw,24px);
+  aspect-ratio:auto;
+  height:auto;
+  min-height:0;
+  overflow:visible;
+  padding:clamp(24px,2.5vw,36px) clamp(10px,1.2vw,18px) clamp(28px,3vw,44px);
+}
+.page-project-02 .project02-archive-block--03.archive03 .archive-title-row,
+.page-project-02 .project02-archive-block--03.archive03 .archive-summary{
+  position:static;
+  top:auto;
+  left:auto;
+  right:auto;
+  bottom:auto;
+  margin:0;
+  max-width:100%;
+}
+.page-project-02 .project02-archive-block--03.archive03 .archive03-media-grid{
+  position:relative;
+  inset:auto;
+  width:100%;
+  height:auto;
+  min-width:0;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  align-items:start;
+  gap:clamp(8px,1vw,16px);
+  margin:0;
+  padding:0;
+}
+.page-project-02 .project02-archive-block--03.archive03 .archive03-media-grid > video,
+.page-project-02 .project02-archive-block--03.archive03 .archive03-media-grid > img{
+  position:static;
+  inset:auto;
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  height:auto;
+  aspect-ratio:9/16;
+  object-fit:cover;
+  margin:0;
+  transform:none;
+}
+@media(max-width:800px){
+  .page-project-02 .project02-archive-block--03.archive03 .archive03-media-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:480px){
+  .page-project-02 .project02-archive-block--03.archive03 .archive03-media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
