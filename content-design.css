@@ -115,3 +115,16 @@
 @media(max-width:800px){.page-project-content-design .cd-process-grid{grid-template-columns:repeat(2,1fr)}.page-project-content-design .cd-featured{grid-template-columns:1fr;gap:25px}.page-project-content-design .cd-featured--reverse .cd-feature-text,.page-project-content-design .cd-featured--reverse .cd-stage{order:initial}.page-project-content-design .cd-selected-grid{gap:10px}.page-project-content-design .cd-stage{min-height:280px}}
 @media(max-width:540px){.page-project-content-design .cd-selected-grid{grid-template-columns:repeat(2,1fr)}.page-project-content-design .cd-brand-grid--editorial{grid-template-columns:repeat(3,1fr)}.page-project-content-design .cd-brand-grid--editorial button:first-child{grid-column:span 2;grid-row:span 2}.page-project-content-design .cd-brand-head{display:block}.page-project-content-design .cd-process{padding:17px}.cd-modal:not([hidden]){padding:60px 4px 15px}.cd-modal button{width:34px;height:34px;font-size:19px}}
 @media(prefers-reduced-motion:reduce){.page-project-content-design .cd-stage img,.page-project-content-design .cd-work-card img,.page-project-content-design .cd-brand-grid img{transition:none}}
+
+/* Equal hierarchy: all five card-news series share one gallery treatment. */
+.page-project-content-design .cd-unified-heading{margin:32px 0 26px}.page-project-content-design .cd-unified-heading p{margin-top:8px;font-size:14px;line-height:1.7;color:#705e5a}
+.page-project-content-design .cd-selected-grid--equal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,32px);align-items:start}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card{display:block;min-width:0}
+.page-project-content-design .cd-selected-grid--equal .cd-card-image{position:relative;display:block;overflow:hidden;border-radius:10px;background:#e4d9d2}
+.page-project-content-design .cd-selected-grid--equal .cd-card-image img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:0;transition:transform .35s ease}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card:hover img,.page-project-content-design .cd-selected-grid--equal .cd-work-card:focus-visible img{transform:scale(1.035)}
+.page-project-content-design .cd-selected-grid--equal .cd-card-overlay{position:absolute;inset:auto 0 0;padding:24px 12px 12px;color:#fff;background:linear-gradient(transparent,#1119);font:700 11px var(--font-mono,monospace);letter-spacing:.06em;opacity:0;transition:opacity .2s}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card:hover .cd-card-overlay,.page-project-content-design .cd-selected-grid--equal .cd-work-card:focus-visible .cd-card-overlay{opacity:1}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card b{font-size:clamp(15px,1.35vw,19px);line-height:1.4;margin:13px 0 6px}
+.page-project-content-design .cd-selected-grid--equal .cd-work-card>span:last-child{font:600 11px var(--font-mono,monospace);color:#7b625e;letter-spacing:.025em}
+@media(max-width:650px){.page-project-content-design .cd-selected-grid--equal{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
