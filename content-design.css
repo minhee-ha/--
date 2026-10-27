@@ -158,3 +158,32 @@
 .page-project-content-design .cd-production-focus b{margin-right:16px;color:#8a354b;font:700 12px var(--font-mono,monospace)}
 @media(max-width:1000px){.page-project-content-design .cd-archive01 .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.page-project-content-design .cd-section-title{grid-template-columns:42px minmax(0,1fr)}.page-project-content-design .cd-archive01 .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.page-project-content-design .cd-production-points span{padding:8px 11px}}
+
+/* Content Design — Video Content-style left rail and right media layout */
+.page-project-content-design .content-design-folder-inner{display:block}
+.page-project-content-design .cd-process{margin-bottom:clamp(50px,6vw,96px)}
+.page-project-content-design .cd-showcase-section{display:grid;grid-template-columns:minmax(135px,23%) minmax(0,1fr);column-gap:clamp(22px,3vw,48px);padding:clamp(38px,4vw,64px) 0;border-top:1px solid rgba(122,30,44,.27);align-items:start}
+.page-project-content-design .cd-showcase-rail{min-width:0}
+.page-project-content-design .cd-showcase-number{display:block;font:italic 700 clamp(42px,4.5vw,66px)/.95 var(--font-mono,monospace);letter-spacing:-.07em;color:#84263e}
+.page-project-content-design .cd-showcase-rail h2{margin:8px 0 10px;font-size:clamp(21px,2.15vw,33px);line-height:1.13;letter-spacing:-.04em}
+.page-project-content-design .cd-showcase-rail p{max-width:225px;font-size:clamp(12px,1vw,15px);line-height:1.6;color:#6f5553}
+.page-project-content-design .cd-showcase-main{min-width:0}
+.page-project-content-design .cd-showcase-intro{margin:0 0 25px;padding:0 0 20px;border-bottom:1px solid rgba(122,30,44,.25)}
+.page-project-content-design .cd-showcase-intro strong{font-size:clamp(21px,2.2vw,33px);line-height:1.2;letter-spacing:-.035em}
+.page-project-content-design .cd-showcase-intro p{margin-top:10px;font-size:clamp(12px,1vw,15px);line-height:1.7;color:#695652}
+.page-project-content-design .cd-showcase-main .cd-selected-grid.cd-selected-grid--equal{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,26px)}
+.page-project-content-design .cd-work-item,.page-project-content-design .cd-image-item{min-width:0}
+.page-project-content-design .cd-work-item .cd-work-card{display:block;width:100%}
+.page-project-content-design .cd-work-item .cd-card-image{display:block}
+.page-project-content-design .cd-item-caption{padding:12px 0 5px;min-width:0}
+.page-project-content-design .cd-item-category{display:block;color:#913e51;font:800 10px/1.4 var(--font-mono,monospace);letter-spacing:.075em}
+.page-project-content-design .cd-item-caption h3,.page-project-content-design .cd-item-caption h4{margin:5px 0 6px;font-size:clamp(15px,1.35vw,20px);line-height:1.25;letter-spacing:-.035em;overflow-wrap:anywhere}
+.page-project-content-design .cd-item-caption p{font-size:clamp(11px,.95vw,13px);line-height:1.55;color:#705e5a;overflow-wrap:anywhere}
+.page-project-content-design .cd-showcase-main .cd-brand{margin:0 0 clamp(40px,5vw,75px)}
+.page-project-content-design .cd-showcase-main .cd-brand-head{margin-bottom:18px}
+.page-project-content-design .cd-showcase-main .cd-brand-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.5vw,24px);align-items:start}
+.page-project-content-design .cd-showcase-main .cd-brand-grid .cd-image-item{display:block}
+.page-project-content-design .cd-showcase-main .cd-brand-grid .cd-image-item button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.page-project-content-design .cd-showcase-main .cd-brand-grid .cd-image-item img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+@media(max-width:850px){.page-project-content-design .cd-showcase-section{grid-template-columns:minmax(120px,25%) minmax(0,1fr);gap:18px}.page-project-content-design .cd-showcase-main .cd-selected-grid.cd-selected-grid--equal,.page-project-content-design .cd-showcase-main .cd-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.page-project-content-design .cd-showcase-section{grid-template-columns:1fr;gap:25px}.page-project-content-design .cd-showcase-rail p{max-width:none}.page-project-content-design .cd-showcase-main .cd-selected-grid.cd-selected-grid--equal,.page-project-content-design .cd-showcase-main .cd-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
