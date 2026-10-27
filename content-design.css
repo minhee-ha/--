@@ -128,3 +128,11 @@
 .page-project-content-design .cd-selected-grid--equal .cd-work-card b{font-size:clamp(15px,1.35vw,19px);line-height:1.4;margin:13px 0 6px}
 .page-project-content-design .cd-selected-grid--equal .cd-work-card>span:last-child{font:600 11px var(--font-mono,monospace);color:#7b625e;letter-spacing:.025em}
 @media(max-width:650px){.page-project-content-design .cd-selected-grid--equal{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
+
+/* Preserve original aspect ratios for all Archive 02 social-design images. */
+.page-project-content-design .cd-brand-grid{align-items:start}
+.page-project-content-design .cd-brand-grid button{display:block;align-self:start;height:auto;overflow:visible}
+.page-project-content-design .cd-brand-grid img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+.page-project-content-design .cd-brand-grid--editorial button:first-child{grid-column:auto;grid-row:auto}
+.page-project-content-design .cd-brand-grid button:hover img{transform:translateY(-4px)}
+@media(max-width:540px){.page-project-content-design .cd-brand-grid--editorial button:first-child{grid-column:auto;grid-row:auto}}
